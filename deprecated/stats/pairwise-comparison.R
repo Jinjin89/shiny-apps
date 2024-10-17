@@ -1,16 +1,6 @@
 #!/usr/bin/env Rscript
 options(shiny.port = 18888)
 
-####################################
-# function consolidate
-####################################
-ft_loading_required_pkg <- function(package_name) {
-  if (!require(package_name, character.only = TRUE, quietly = TRUE)) {
-    install.packages(package_name,repos = 'https://mirrors.pku.edu.cn/CRAN/')
-    library(package_name, character.only = TRUE)
-  } 
-}
-
 ft_read_data <- function(input_file,input_text,header,sheet_name,aggr,group){
   tryCatch(
     {
@@ -29,7 +19,6 @@ ft_read_data <- function(input_file,input_text,header,sheet_name,aggr,group){
       }
       message('**  glance data')
       print(head(df))
-      
       # 2) data pp
       all_variables = colnames(df)
       
@@ -82,8 +71,6 @@ ft_read_data <- function(input_file,input_text,header,sheet_name,aggr,group){
 ft_test <- function(input_df,methods){
   tryCatch(
     {
-      
-      
       all_variables = input_df$group %>% unique
       init_res = utils::combn(all_variables,2) %>% 
         t %>% 
