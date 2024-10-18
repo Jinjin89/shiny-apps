@@ -15,4 +15,4 @@ source('libs/stats.R')
 source('apps/stats/pairwise_comparison.R')
 
 # run app
-shiny::runApp('apps',port = 13838,host = '0.0.0.0')
+shiny::runApp('apps',port =8880,host = '0.0.0.0')

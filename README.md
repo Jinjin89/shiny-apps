@@ -5,8 +5,8 @@ shiny applications
 
 ## build image
 ```
-docker build -t shiny-apps:1.0.0 .
-
+docker build -t shiny-apps .
+docker run -ti -d --rm -p 8880:8880 shiny-apps
 ```
 
 ## run apps

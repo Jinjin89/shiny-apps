@@ -13,7 +13,7 @@ RUN rm -rf /usr/local/workdir/build
 # volume
 
 # add the shiny apps scripts, which is persistent
-EXPOSE 13838
+EXPOSE 8880
 COPY shiny /usr/local/workdir/shiny
 WORKDIR /usr/local/workdir/shiny
 CMD ["Rscript", "run.R"]
