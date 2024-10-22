@@ -18,7 +18,7 @@ ui_list$ui_body_pairwise_comparison <-
       textAreaInput(
         "data_pairwise_input",
         "Paste data beblow:",
-        value = 'a	b	c\n1	4	8\n2	5	9\n3	6	10\n7	12\n5\n5',
+        #value = 'a	b	c\n1	4	8\n2	5	9\n3	6	10\n7	12\n5\n5',
         placeholder= "paste data here...",
         height = "150px"),
       

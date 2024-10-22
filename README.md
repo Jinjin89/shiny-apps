@@ -3,14 +3,13 @@
 shiny applications
 
 
-## build image
-```
-docker build -t shiny-apps .
-docker run -ti --rm -p 8880:8880 shiny-apps # used for test
-docker run -ti -d --rm -p 8880:8880 shiny-apps
-```
+## run the shiny container
+```bash
+docker compose up # start the applications used for test
 
-## run apps
+docker compose up -d # start the container
+docker compose down #  stop the container
+```
 
 ## 1. stats
 
