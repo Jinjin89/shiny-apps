@@ -3,7 +3,7 @@ services:
     build: .
     image: shiny-apps:latest
     ports:
-      - "8880:8880"
+      - "3838:3838"
     volumes:
       - ./shiny:/usr/local/workdir/shiny
     entrypoint: ["Rscript", "run.R"]

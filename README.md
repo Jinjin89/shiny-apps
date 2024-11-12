@@ -1,6 +1,7 @@
 # shiny-apps
 
 shiny applications
+the conent is hosted under: https://bioinformatics.ltd/shiny/
 
 
 ## run the shiny container
